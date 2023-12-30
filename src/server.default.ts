@@ -24,7 +24,7 @@ app.get('/', (_, res) => {
 
 const start = async (): Promise<void> => {
   await payload.init({
-    secret: process.env.PAYLOAD_SECRET || '',
+    secret: process.env.PAYLOAD_SECRET || '06138a3e-cc09-4cd4-a753-eda8887c67dc',
     express: app,
     onInit: () => {
       payload.logger.info(`Payload Admin URL: ${payload.getAdminURL()}`)
